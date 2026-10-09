@@ -2,9 +2,13 @@ package net.bouderhem.ebanksevice.services;
 
 import net.bouderhem.ebanksevice.entities.BankAccount;
 import net.bouderhem.ebanksevice.repository.BankAccountRepository;
+import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
+@Service
 public class EbankService {
     private BankAccountRepository accountRepository;
 
@@ -20,6 +24,8 @@ public class EbankService {
     }
 
     public BankAccount save(BankAccount bankAccount){
+        bankAccount.setId(UUID.randomUUID().toString());
+        bankAccount.setCreatedAt(new Date());
         return accountRepository.save(bankAccount);
     }
 }
