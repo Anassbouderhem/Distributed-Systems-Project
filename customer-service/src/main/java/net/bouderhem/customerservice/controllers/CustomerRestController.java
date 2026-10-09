@@ -1,7 +1,7 @@
 package net.bouderhem.customerservice.controllers;
 
 import net.bouderhem.customerservice.entities.Customer;
-import net.bouderhem.customerservice.service.CustomerService;
+import net.bouderhem.customerservice.services.CustomerService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

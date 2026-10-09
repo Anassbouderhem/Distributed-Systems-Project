@@ -1,4 +1,4 @@
-package net.bouderhem.customerservice.service;
+package net.bouderhem.customerservice.services;
 
 import net.bouderhem.customerservice.entities.Customer;
 import net.bouderhem.customerservice.repository.CustomerRepository;

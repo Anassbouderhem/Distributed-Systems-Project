@@ -1,7 +1,7 @@
 package net.bouderhem.customerservice;
 
 import net.bouderhem.customerservice.entities.Customer;
-import net.bouderhem.customerservice.service.CustomerService;
+import net.bouderhem.customerservice.services.CustomerService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
