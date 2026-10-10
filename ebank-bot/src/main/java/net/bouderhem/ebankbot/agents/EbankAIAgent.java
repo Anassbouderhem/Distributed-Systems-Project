@@ -23,9 +23,9 @@ public class EbankAIAgent {
                 .defaultToolCallbacks(tools)
                 .build();
     }
-    public String chat(String query, HttpSession session){
+    public String chat(String query, String conversationId){
         return chatClient.prompt().user(query)
-                .advisors(a -> a.param("chat_memory_conversation_id", session.getId()))
+                .advisors(a -> a.param("chat_memory_conversation_id", conversationId))
                 .call().content();
     }
 }

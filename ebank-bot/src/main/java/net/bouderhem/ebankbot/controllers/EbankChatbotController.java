@@ -17,6 +17,6 @@ public class EbankChatbotController {
 
     @GetMapping(value = "/chat", produces = MediaType.TEXT_PLAIN_VALUE)
     public String chat(@RequestParam(name = "query", defaultValue = "Bonjour") String query, HttpSession session){
-        return ebankAIAgent.chat(query, session);
+        return ebankAIAgent.chat(query, session.getId());
     }
 }
