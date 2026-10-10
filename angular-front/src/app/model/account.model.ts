@@ -6,7 +6,7 @@ export interface Account{
   customerId? :number
 }
 export enum RequestStatus{
-  SUCCESS, ERROR
+  ERROR, SUCCESS
 }
 export interface AccountListState {
   accounts? : Account[],

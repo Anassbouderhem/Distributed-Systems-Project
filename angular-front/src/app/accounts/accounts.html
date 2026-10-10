@@ -5,7 +5,7 @@
     </div>
   }
   @if (accounts$|async; as state){
-    @if (state.status==RequestStatus.ERROR){
+    @if (state.status==RequestStatus.SUCCESS){
       <table class="table">
         <thead>
         <tr>
@@ -24,7 +24,7 @@
           }
         </tbody>
       </table>
-    } @else if (state.status == RequestStatus.SUCCESS) {
+    } @else if (state.status == RequestStatus.ERROR) {
       <div class="text-danger">
         {{state.errorMessage}}
       </div>
