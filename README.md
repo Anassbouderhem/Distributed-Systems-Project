@@ -127,3 +127,19 @@ Avec le locator Eureka, la gateway crée automatiquement une route pour chaque s
 Exemple : `http://localhost:9999/CUSTOMER-SERVICE/customers`
 
 ![Routage dynamique](screenshots/gateway-dynamic.png)
+## Tests des services backend
+
+### Postman
+
+![Postman GET](screenshots/postman-get.png)
+
+![Postman POST](screenshots/postman-post.png)
+
+
+### Swagger-UI
+
+La documentation est générée avec Springdoc OpenAPI et accessible sur `/swagger-ui.html` pour chaque service.
+
+![Swagger Customer-Service](screenshots/swagger-customer.png)
+
+![Swagger EBank-Service](screenshots/swagger-ebank.png)

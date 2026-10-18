@@ -39,6 +39,7 @@ public class EbankService {
             Customer customer = customerRestClient.getCustomerById(bankAccount.getCustomerId());
             bankAccount.setId(UUID.randomUUID().toString());
             bankAccount.setCreatedAt(new Date());
+            bankAccount.setCustomer(customer);
             return accountRepository.save(bankAccount);
         } catch (Exception e){
             throw new RuntimeException(e.getMessage());
